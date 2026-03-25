@@ -27,7 +27,7 @@ scene.add(light);
 
 // Cargar modelo GLB
 const loader = new GLTFLoader();
-loader.load('Clinica_MRI.glb', function (gltf) {
+loader.load('/Clinica_MRI.glb', function (gltf) {
     scene.add(gltf.scene);
 }, undefined, function (error) {
     console.error("Error cargando GLB:", error);
@@ -46,4 +46,3 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
-;
