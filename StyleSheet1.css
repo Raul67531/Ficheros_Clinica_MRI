@@ -1,12 +1,19 @@
 body {
-  margin: 0;
-  overflow: hidden;
-  font-family: Arial;
+    margin: 0;
+    overflow: hidden;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
-  position: absolute;
-  z-index: 1;
-  color: black;
-  left: 20px;
+    position: absolute;
+    z-index: 10;
+    margin: 20px;
+    color: black;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
 }
