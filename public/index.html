@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo 3D Clínica MRI</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            background: #ffffff;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            position: absolute;
-            z-index: 10;
-            margin: 20px;
-            color: black;
-        }
-        canvas {
-            width: 100vw;
-            height: 100vh;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="./StyleSheet1.css">
 </head>
 <body>
     <h1>Modelo 3D Clínica MRI</h1>
@@ -30,7 +12,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/three@r128/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@r128/examples/js/loaders/GLTFLoader.js"></script>
-    
     <script>
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
