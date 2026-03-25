@@ -1,3 +1,5 @@
+```javascript
+// filepath: public/Script1.js
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js';
 
@@ -22,7 +24,7 @@ const light = new THREE.HemisphereLight(0xffffff, 0x444444, 1);
 scene.add(light);
 
 const loader = new GLTFLoader();
-loader.load('/Clinica_MRI.glb', function (gltf) {
+loader.load('./Clinica_MRI.glb', function (gltf) {
     scene.add(gltf.scene);
 }, undefined, function (error) {
     console.error("Error cargando GLB:", error);
@@ -39,3 +41,4 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
+```
